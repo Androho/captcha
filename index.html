@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--   Настройки на стороне пользователя, для страницы с которой будет вызываться капча id = xxx
+     рабочий код API и список пользователей находятся на стороне сервера поддерживающего PHP-->
+    <title>Title</title>
+</head>
+<body>
+<h2>Please check to download the file.</h2>
+<!--  кнопка open-modal-btn обязательна со всеми параметрами устанавливается на странице пользователя ххх -->
+<button id="open-modal-btn" data-user-id="xyz" data-user-func="usFunc">Cap</button>
+<!-- кнопка user-btn это та кнопка которую скрывает за капчей пользователь ххх кнопка скрыта пока не отгадают капчу -->
+<button id="user-btn" style="display: none">Download</button>
+
+<!-- для работы капчи должны быть подключены скрипты jquery и captcha.js, captcha.js желательно класть на какой нибудь cdn сервис-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="captcha.js"></script>
+</body>
+</html>
